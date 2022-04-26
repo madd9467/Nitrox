@@ -28,13 +28,14 @@ namespace NitroxModel.Helper
 
         public static bool TriggerOnDirectory(string subnauticaRoot)
         {
+            
             if (!IsPirateByDirectory(subnauticaRoot))
             {
                 return false;
             }
             
             OnPirateDetected();
-            return true;
+            return false;
         }
 
         private static event EventHandler pirateDetected;
